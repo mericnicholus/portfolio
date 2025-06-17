@@ -24,8 +24,8 @@
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                     </nav>
                     <div class="header-text">
-                        <p>Software Engineer</p>
-                        <h1>Hi, I'm <span>Mabinda <br>Nicholus Eric</span> from<br> Mbarara university of science and Technology.</h1>
+                        <p>Student</p>
+                        <h1>Hi, I'm <span>Mabinda <br>Eric</span> from<br> Mbarara university of science and Technology.</h1>
                     </div>
                 </div>
             </div> 
@@ -37,13 +37,12 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>In these examples, the application predicts how likely 
-                            it is that the user is typing each query and presents 
-                            to the user a list of the top-matching queries, in 
-                            descending order of weight. These weights are determined 
-                            by historical data, such as box office revenue for 
-                            movies, frequencies of search queries from other Google 
-                            users, or the typing history of a cell phone user. </p>
+                        <p>As a software engineering student with a passion for building innovative solutions, 
+                            I am excited to showcase my skills and projects in this portfolio. With a strong 
+                            foundation in programming languages like Java and Python, I have developed a range 
+                            of projects that demonstrate my ability to design, develop, and deploy software 
+                            applications. I am eager to apply my skills in a real-world setting and continue 
+                            learning and growing as a software engineer. </p>
 
                             <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -182,7 +181,7 @@
             </div>
 
             <div class="copyright">
-                <p>Copyright &copy; NickMabinda</p>
+                <p>Copyright &copy; <span id="year"></span> - NickMabinda</p>
             </div>
 
         </div>
@@ -201,6 +200,7 @@
                     event.currentTarget.classList.add("active-link");
                     document.getElementById(tabname).classList.add("active-tab");
                 }
+                document.getElementById("year").innerHTML = new Date().getFullYear();
                 
             </script>
 
